@@ -37,14 +37,14 @@ public class TestItemToPurchase {
         }
     }
 
-    // Make sure the user enters a float
-    private static float getFloatFromPrompt(String prompt) {
+    // Make sure the user enters a double
+    private static double getDoubleFromPrompt(String prompt) {
         while (true) {
             System.out.print(prompt);
             String userInput = input.next();
     
             try {
-                return Float.parseFloat(userInput);
+                return Double.parseDouble(userInput);
             } catch (Exception err) {
                 System.out.print("Make sure you enter a number. ");
             }   
@@ -76,7 +76,6 @@ public class TestItemToPurchase {
             System.out.println("9. Exit");
             System.out.println();
             
-            
             int option = getIntFromPrompt("Enter a number to choose an option: ");
             System.out.println();
 
@@ -101,7 +100,7 @@ public class TestItemToPurchase {
                     name = input.next();
                     System.out.print("Enter description: ");
                     description = input.next();
-                    price = getFloatFromPrompt("Enter price: ");
+                    price = getDoubleFromPrompt("Enter price: ");
                     quantity = getIntFromPrompt("Enter quantity: ");
                     item = new ItemToPurchase(name, description, price, quantity);
                     break;
