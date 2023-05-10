@@ -23,6 +23,7 @@ public class TestItemToPurchase {
         }
     }
 
+    // Make sure the user enters an integer
     private static int getIntFromPrompt(String prompt) {
         while (true) {
             System.out.print(prompt);
@@ -31,11 +32,12 @@ public class TestItemToPurchase {
             try {
                 return Integer.parseInt(userInput);
             } catch (Exception err) {
-                System.out.print("Make sure you enter a number. ");
+                System.out.print("Make sure you enter a whole number. ");
             }   
         }
     }
 
+    // Make sure the user enters a float
     private static float getFloatFromPrompt(String prompt) {
         while (true) {
             System.out.print(prompt);
