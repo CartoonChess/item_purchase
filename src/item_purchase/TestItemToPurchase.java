@@ -3,6 +3,8 @@ package item_purchase;
 import java.util.Scanner;
 
 public class TestItemToPurchase {
+    private static Scanner input;
+
     private static void runTests() {
         ItemToPurchase[] items = {
             new ItemToPurchase("Item 1"),
@@ -21,6 +23,32 @@ public class TestItemToPurchase {
         }
     }
 
+    private static int getIntFromPrompt(String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            String userInput = input.next();
+    
+            try {
+                return Integer.parseInt(userInput);
+            } catch (Exception err) {
+                System.out.print("Make sure you enter a number. ");
+            }   
+        }
+    }
+
+    private static float getFloatFromPrompt(String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            String userInput = input.next();
+    
+            try {
+                return Float.parseFloat(userInput);
+            } catch (Exception err) {
+                System.out.print("Make sure you enter a number. ");
+            }   
+        }
+    }
+
     public static void main(String[] args) {
         // Create a default object and let the user replace it at will
         String name = "none";
@@ -30,7 +58,7 @@ public class TestItemToPurchase {
         ItemToPurchase item = new ItemToPurchase(name);
 
         // The delimeter allows spaces in user input
-        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        input = new Scanner(System.in).useDelimiter("\n");
 
         while (true) {
             System.out.println();
@@ -72,10 +100,8 @@ public class TestItemToPurchase {
                     name = input.next();
                     System.out.print("Enter description: ");
                     description = input.next();
-                    System.out.print("Enter price: ");
-                    price = input.nextDouble();
-                    System.out.print("Enter quantity: ");
-                    quantity = input.nextInt();
+                    price = getFloatFromPrompt("Enter price: ");
+                    quantity = getIntFromPrompt("Enter quantity: ");
                     item = new ItemToPurchase(name, description, price, quantity);
                     break;
                 case 5:
