@@ -77,8 +77,7 @@ public class TestItemToPurchase {
             System.out.println();
             
             
-            System.out.print("Enter a number to choose an option: ");
-            int option = input.nextInt();
+            int option = getIntFromPrompt("Enter a number to choose an option: ");
             System.out.println();
 
             switch(option) {
