@@ -28,7 +28,7 @@ public class TestItemToPurchase {
         int quantity;
         ItemToPurchase item = new ItemToPurchase(name);
 
-        // Scanner input = new Scanner(System.in);
+        // The delimeter allows spaces in user input
         Scanner input = new Scanner(System.in).useDelimiter("\n");
 
         while (true) {
