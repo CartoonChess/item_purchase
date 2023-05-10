@@ -31,6 +31,7 @@ public class ItemToPurchase {
 
     public void printItemCost() {
         double subtotal = itemQuantity * itemPrice;
+        // format to show prices to two decimal places
         System.out.println(itemName + ", " + itemQuantity + " @ $" + String.format("%.2f", itemPrice) + " = $" + String.format("%.2f", subtotal));
     }
 
