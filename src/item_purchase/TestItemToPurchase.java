@@ -1,9 +1,9 @@
 package item_purchase;
 
-import java.util.Scanner;;
+import java.util.Scanner;
 
 public class TestItemToPurchase {
-    public static void runTests() {
+    private static void runTests() {
         ItemToPurchase[] items = {
             new ItemToPurchase("Item 1"),
             new ItemToPurchase("Item 2", "Old Description"),
@@ -22,6 +22,7 @@ public class TestItemToPurchase {
     }
 
     public static void main(String[] args) {
+        // Create a default object and let the user replace it at will
         String name = "none";
         String description;
         double price;
@@ -38,7 +39,7 @@ public class TestItemToPurchase {
             System.out.println("2. Create New Item (name only)");
             System.out.println("3. Create New Item (name and description)");
             System.out.println("4. Create New Item (name, description, price, and quantity)");
-            System.out.println("5. Show Item Description");
+            System.out.println("5. Show Item Description"); // uses the getter
             System.out.println("6. Change Item Description");
             System.out.println("7. Show Item Name and Description");
             System.out.println("8. Show Item Subtotal");
