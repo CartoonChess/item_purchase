@@ -1,0 +1,19 @@
+Item 1: none
+Item description: none
+Item 1: New Description
+Item 1 0 @ $0.00 = $0.00
+
+Item 2: Old Description
+Item description: Old Description
+Item 2: New Description
+Item 2 0 @ $0.00 = $0.00
+
+Bottled Water: Deer Park, 12 oz.
+Item description: Deer Park, 12 oz.
+Bottled Water: New Description
+Bottled Water 1 @ $10.00 = $10.00
+
+Item 4: Old Description
+Item description: Old Description
+Item 4: New Description
+Item 4 5 @ $1.10 = $5.50
