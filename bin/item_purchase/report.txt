@@ -1,19 +1,127 @@
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 1
+
 Item 1: none
 Item description: none
 Item 1: New Description
-Item 1 0 @ $0.00 = $0.00
+Item 1, 0 @ $0.00 = $0.00
 
 Item 2: Old Description
 Item description: Old Description
 Item 2: New Description
-Item 2 0 @ $0.00 = $0.00
+Item 2, 0 @ $0.00 = $0.00
 
 Bottled Water: Deer Park, 12 oz.
 Item description: Deer Park, 12 oz.
 Bottled Water: New Description
-Bottled Water 1 @ $10.00 = $10.00
+Bottled Water, 1 @ $10.00 = $10.00
 
 Item 4: Old Description
 Item description: Old Description
 Item 4: New Description
-Item 4 5 @ $1.10 = $5.50
+Item 4, 5 @ $1.09 = $5.45
+
+
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 4
+
+Enter item name: Cat Snacks
+Enter description: Extra tasty, 100g
+Enter price: 5.67
+Enter quantity: 3
+
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 5
+
+Item description: Extra tasty, 100g
+
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 6
+
+Enter description: Extremely delicious, 105g
+
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 7
+
+Cat Snacks: Extremely delicious, 105g
+
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 8
+
+Cat Snacks, 3 @ $5.67 = $17.01
+
+OPTIONS
+1. Run Tests
+2. Create New Item (name only)
+3. Create New Item (name and description)
+4. Create New Item (name, description, price, and quantity)
+5. Show Item Description
+6. Change Item Description
+7. Show Item Name and Description
+8. Show Item Subtotal
+9. Exit
+
+Enter a number to choose an option: 9
+
+Don't forget to paste the output in report.txt!
+(end of program)

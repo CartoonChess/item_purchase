@@ -31,7 +31,7 @@ public class ItemToPurchase {
 
     public void printItemCost() {
         double subtotal = itemQuantity * itemPrice;
-        System.out.println(itemName + " " + itemQuantity + " @ $" + String.format("%.2f", itemPrice) + " = $" + String.format("%.2f", subtotal));
+        System.out.println(itemName + ", " + itemQuantity + " @ $" + String.format("%.2f", itemPrice) + " = $" + String.format("%.2f", subtotal));
     }
 
     public void printItemDescription() {
